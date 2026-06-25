@@ -57,7 +57,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [miantiao-me/hacker-podcast](https://github.com/miantiao-me/hacker-podcast) | AI-подкаст на китайском из материалов Hacker News. | Workers, Workflows | Medium | Active | Medium |
 | [nicholasgriffintn/ai-platform](https://github.com/nicholasgriffintn/ai-platform) | Multi-model платформа персонального AI assistant. | Workers, AI Gateway, Hono | Medium | Active | Medium |
 | [unicornB/Supportly-Ai](https://github.com/unicornB/Supportly-Ai) | Cloudflare-native платформа AI customer support. | Workers, Workers AI, knowledge base | Medium | Active | Medium |
-| [G4brym/workers-research](https://github.com/G4brym/workers-research) | Serverless deep research agent. | Workers, Durable Objects | Medium | Active | Medium |
+| [G4brym/workers-research](https://github.com/G4brym/workers-research) | Serverless агент для глубокого исследования. | Workers, Durable Objects | Medium | Active | Medium |
 | [atinux/flux-ai-image-generator](https://github.com/atinux/flux-ai-image-generator) | Генерация изображений с Flux на Cloudflare. | Workers AI, R2, NuxtHub | Easy | Active | Medium |
 | [chipmates/agoracosmica](https://github.com/chipmates/agoracosmica) | Образовательная платформа для AI-разговоров. | Workers, self-hosted app | Medium | Active | Medium |
 | [devarshishimpi/codra](https://github.com/devarshishimpi/codra) | Self-hosted AI code review для GitHub PR. | Workers, KV, Queues, Hyperdrive, Workers AI | Medium | Active | Medium |
@@ -72,7 +72,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [openma-ai/open-managed-agents](https://github.com/openma-ai/open-managed-agents) | Self-hosted реализация Claude Managed Agents API. | Workers, Durable Objects | Medium | Active | Medium |
 | [Logos-Flux/cloudflare-multiagent](https://github.com/Logos-Flux/cloudflare-multiagent) | Multi-agent AI platform на Workers. | Workers, AI generation | Medium | Active | Medium |
 | [acoyfellow/flue-snippets](https://github.com/acoyfellow/flue-snippets) | Запускаемые примеры Flue agents с deploy tests. | Workers, Durable Objects, Workers AI | Easy | Active | Low |
-| [stukennedy/honi](https://github.com/stukennedy/honi) | Cloudflare-native agentic AI framework. | Durable Objects, Workers | Medium | Active | Medium |
+| [stukennedy/honi](https://github.com/stukennedy/honi) | Cloudflare-native фреймворк для agentic AI. | Durable Objects, Workers | Medium | Active | Medium |
 | [acoyfellow/fleet-pattern](https://github.com/acoyfellow/fleet-pattern) | Иерархический паттерн Durable Object agents. | Workers, Durable Objects | Medium | Stable | Low |
 | [serpin-taxt/openchief](https://github.com/serpin-taxt/openchief) | Agents, которые наблюдают за business tools и делают отчеты. | Workers, serverless runtime | Medium | Active | Medium |
 | [huseynsnmz/postr](https://github.com/huseynsnmz/postr) | Keyboard-first email TUI с AI agent. | Workers, Durable Objects, Email Routing, Workers AI | Hard | Active | Medium |
@@ -99,7 +99,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 
 | Проект | Что делает | Cloudflare stack | Deploy | Status | Risk |
 |---|---|---|---|---|---|
-| [TimeSurgeLabs/athenadb](https://github.com/TimeSurgeLabs/athenadb) | Serverless vector database API. | Workers, D1, Vectorize, Workers AI | Medium | Stable | Medium |
+| [TimeSurgeLabs/athenadb](https://github.com/TimeSurgeLabs/athenadb) | Serverless API для векторной базы данных. | Workers, D1, Vectorize, Workers AI | Medium | Stable | Medium |
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | Поиск искусства с Vectorize и Workers AI. | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | Serverless embeddings API с Vectorize и OpenAI. | Workers, D1, Vectorize | Medium | Stable | Medium |
 | [zdmc23/cf-service-vector](https://github.com/zdmc23/cf-service-vector) | Vectorize API wrapper для Pages Functions service binding. | Workers, Pages Functions, Vectorize | Medium | Stable | Low |
@@ -110,10 +110,10 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 
 | Проект | Что делает | Cloudflare stack | Deploy | Status | Risk |
 |---|---|---|---|---|---|
-| [louisbrulenaudet/genai-api](https://github.com/louisbrulenaudet/genai-api) | Workers + Gemini API template. | Workers, AI Gateway, Hono | Easy | Active | Medium |
+| [louisbrulenaudet/genai-api](https://github.com/louisbrulenaudet/genai-api) | Шаблон Workers + Gemini API. | Workers, AI Gateway, Hono | Easy | Active | Medium |
 | [nuxt-hub/core](https://github.com/nuxt-hub/core) | Nuxt module для database, KV, blob storage, cache и AI integrations. | D1, KV, R2, Workers AI | Medium | Active | Low |
 | [JSONbored/opennextjs-cli](https://github.com/JSONbored/opennextjs-cli) | CLI/TUI для OpenNext.js на Workers с MCP features. | Workers, OpenNext, MCP | Medium | Active | Low |
-| [jamescary/quickstart-template](https://github.com/jamescary/quickstart-template) | Cloudflare-native full-stack starter. | D1, KV, Durable Objects | Easy | Active | Low |
+| [jamescary/quickstart-template](https://github.com/jamescary/quickstart-template) | Cloudflare-native full-stack starter-шаблон. | D1, KV, Durable Objects | Easy | Active | Low |
 | [acoyfellow/svelte-edge](https://github.com/acoyfellow/svelte-edge) | Agent-generated Svelte UI, компилируемый на Workers. | Workers, Hono, Workers AI | Medium | Active | Medium |
 | [Geekgineer/needle-rs](https://github.com/Geekgineer/needle-rs) | Маленький WASM runtime для tool-calling transformer. | Workers, WASM | Hard | Active | Low |
 
@@ -134,7 +134,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 |---|---|---|---|---|---|
 | [Vauth/duckgpt](https://github.com/Vauth/duckgpt) | Chat app с доступом к моделям в стиле Workers AI. | Workers AI, Workers | Medium | Use with care | High |
 | [mohetios/Nekonymous](https://github.com/mohetios/Nekonymous) | Анонимный Telegram bot с encrypted relay. | Workers, D1, KV, Queues, Vectorize | Medium | Use with care | High |
-| [elizabethsiegle/remote-mcp-server-authless-chat-with-cal](https://github.com/elizabethsiegle/remote-mcp-server-authless-chat-with-cal) | Authless calendar MCP demo. | Workers, Workers AI, MCP | Medium | Use with care | High |
+| [elizabethsiegle/remote-mcp-server-authless-chat-with-cal](https://github.com/elizabethsiegle/remote-mcp-server-authless-chat-with-cal) | MCP demo календаря без аутентификации. | Workers, Workers AI, MCP | Medium | Use with care | High |
 | [nikolanovoselec/m365-mcp-server-production](https://github.com/nikolanovoselec/m365-mcp-server-production) | Пример Microsoft 365 remote MCP server. | Workers, MCP, AI Gateway | Hard | Use with care | High |
 
 ## Критерии отбора
