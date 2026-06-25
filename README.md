@@ -2,25 +2,27 @@
 
 > Curated open-source AI, Agent, MCP, Workers AI, D1, R2, Vectorize, and Durable Objects projects deployable on Cloudflare.
 
-一个严格筛选的 Cloudflare AI / Agent / MCP 开源项目导航。这里不收泛 AI 工具大全，只收录与 Cloudflare 部署、运行时或数据组件有明确关系的开源项目。
+Languages: [English](README.md) | [简体中文](i18n/README.zh-CN.md) | [Português do Brasil](i18n/README.pt-BR.md) | [日本語](i18n/README.ja.md) | [Deutsch](i18n/README.de.md) | [Русский](i18n/README.ru.md)
+
+A strictly curated directory of Cloudflare AI / Agent / MCP open-source projects. This is not a general AI tools list. It only includes projects with a clear connection to Cloudflare deployment, runtime, or data infrastructure.
 
 Last reviewed: 2026-06-26
 
 ## Why This List
 
-Cloudflare 的 Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Workers AI、AI Gateway 和 Queues 正在成为低成本部署 AI 应用与 Agent 的重要基础设施。本项目关注三件事：
+Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, AI Gateway, and Queues are becoming important building blocks for low-cost AI apps and agents. This project focuses on three things:
 
-- Deployable: 项目能在 Cloudflare 上部署，或核心架构明显依赖 Cloudflare。
-- Verifiable: README、配置文件、示例或文档足以判断用途和部署方式。
-- Maintained: 优先收录近期仍有维护迹象的项目。
+- Deployable: the project can run on Cloudflare, or its core architecture clearly depends on Cloudflare.
+- Verifiable: README files, config files, examples, or docs make the purpose and deployment path clear.
+- Maintained: projects with recent signs of maintenance are preferred.
 
 ## Legend
 
 | Field | Values |
 |---|---|
-| Deploy | Easy = 一键部署或清晰命令；Medium = 需要多个服务/API key；Hard = 需要理解架构或改代码 |
-| Status | Active = 最近 6 个月有明显维护；Stable = 更新较少但仍有参考价值；Use with care = 有安全、合规、隐私或滥用风险 |
-| Risk | Low = 普通应用/模板；Medium = 涉及用户数据、API key、文件、账号或自动化；High = 代理、匿名、绕限制、爬虫等敏感用途 |
+| Deploy | Easy = one-click deploy or clear commands; Medium = multiple services/API keys; Hard = architecture knowledge or code changes required |
+| Status | Active = clear maintenance in the last 6 months; Stable = less recent activity but still useful; Use with care = security, compliance, privacy, or abuse risk |
+| Risk | Low = ordinary app/template; Medium = user data, API keys, files, accounts, or automation; High = proxy, anonymous, restriction-bypass, crawling, or similarly sensitive use |
 
 ## Contents
 
