@@ -1,0 +1,75 @@
+name: Project submission
+description: Suggest an open-source Cloudflare AI, Agent, or MCP project.
+title: "Add: "
+labels:
+  - project-submission
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project URL
+      description: Link to the canonical repository.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What does it do?
+      description: One or two sentences.
+    validations:
+      required: true
+  - type: checkboxes
+    id: stack
+    attributes:
+      label: Cloudflare stack
+      options:
+        - label: Workers
+        - label: Pages
+        - label: Workers AI
+        - label: AI Gateway
+        - label: D1
+        - label: KV
+        - label: R2
+        - label: Vectorize
+        - label: Durable Objects
+        - label: Queues
+        - label: Email Routing
+        - label: Turnstile
+        - label: Other Cloudflare API or product
+  - type: dropdown
+    id: deploy
+    attributes:
+      label: Deployment difficulty
+      options:
+        - Easy
+        - Medium
+        - Hard
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Maintenance status
+      options:
+        - Active
+        - Stable
+        - Use with care
+        - Unknown
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk level
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Include deployment docs, security caveats, or anything reviewers should check.
