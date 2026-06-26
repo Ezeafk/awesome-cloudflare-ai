@@ -58,6 +58,14 @@ body:
         - Unknown
     validations:
       required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Evaluation score
+      description: Score the project out of 10 using the README rubric: relevance 0-3, deployability 0-2, maintenance 0-2, docs/license 0-2, safety 0-1.
+      placeholder: "Example: 8/10 — relevance 3, deployability 2, maintenance 1, docs/license 1, safety 1."
+    validations:
+      required: true
   - type: dropdown
     id: risk
     attributes:

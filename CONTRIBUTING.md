@@ -24,6 +24,25 @@ Use the existing table format:
 
 Keep descriptions factual and compact.
 
+## Evaluation Score
+
+Every new project should be scored before it is added. Stars are only a weak signal; reviewers should prioritize usefulness, deployability, documentation, and safety.
+
+| Area | Points | Review focus |
+|---|---:|---|
+| Cloudflare relevance | 0-3 | Direct use of Workers, Pages, Workers AI, AI Gateway, D1, KV, R2, Vectorize, Durable Objects, Queues, Email Routing, Turnstile, or Cloudflare APIs. |
+| Deployability | 0-2 | Clear deploy path, wrangler config, template, demo, or setup instructions. |
+| Maintenance | 0-2 | Recent commits, releases, issue replies, or active community use. |
+| Documentation and license | 0-2 | Clear README, environment variables, architecture notes, and auditable license. |
+| Safety | 0-1 | Reasonable boundaries for auth, user data, uploads, automation, proxies, email, or privileged APIs. |
+
+Inclusion guide:
+
+- 8-10: recommended.
+- 6-7: acceptable with caveats.
+- 4-5: use with care or re-review.
+- Below 4: remove or do not include.
+
 ## Status Guide
 
 - Active: recent commit, release, issue reply, or PR activity within roughly 6 months.
@@ -47,6 +66,7 @@ Keep descriptions factual and compact.
 - [ ] Link points to the canonical project repository.
 - [ ] Project is open source or core code is auditable.
 - [ ] Cloudflare stack is listed accurately.
+- [ ] Evaluation score is at least 6, or the PR explains why a lower-scoring project is still worth tracking.
 - [ ] Deploy, status, and risk fields are filled.
 - [ ] Safety caveats are included for sensitive projects.
 - [ ] Link check passes.

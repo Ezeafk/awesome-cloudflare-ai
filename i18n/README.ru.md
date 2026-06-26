@@ -24,6 +24,20 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | Status | Active = заметная поддержка за последние 6 месяцев; Stable = обновлений меньше, но проект полезен; Use with care = риски безопасности, комплаенса, приватности или злоупотреблений |
 | Risk | Low = обычное приложение/шаблон; Medium = пользовательские данные, API keys, файлы, аккаунты или автоматизация; High = proxy, анонимность, обход ограничений, crawling или похожие чувствительные сценарии |
 
+## Метод Оценки
+
+Перед включением проекты получают оценку. Stars — только слабый сигнал; новый проект можно включить, если он явно связан с Cloudflare, разворачивается, хорошо документирован и достаточно безопасен для рекомендации.
+
+| Область | Баллы | Что проверяется |
+|---|---:|---|
+| Связь с Cloudflare | 0-3 | Прямое использование Workers, Pages, Workers AI, AI Gateway, D1, KV, R2, Vectorize, Durable Objects, Queues, Email Routing, Turnstile или Cloudflare APIs. |
+| Развертываемость | 0-2 | Понятный путь deploy, wrangler config, template, demo или setup instructions. |
+| Поддержка | 0-2 | Недавние commits, releases, issue replies или активное community use. |
+| Документация и лицензия | 0-2 | Понятный README, environment variables, architecture notes и проверяемая license. |
+| Безопасность | 0-1 | Разумные границы для auth, user data, uploads, automation, proxies, email или privileged APIs. |
+
+Ориентир включения: 8-10 = рекомендуется, 6-7 = допустимо с оговорками, 4-5 = use with care или повторная проверка, ниже 4 = удалить или не включать. High-risk проекты требуют более высокого балла и явных заметок по безопасности.
+
 ## Содержание
 
 - [Официальные и базовые проекты](#официальные-и-базовые-проекты)
@@ -34,6 +48,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 - [Шаблоны и стартеры](#шаблоны-и-стартеры)
 - [Observability и Ops](#observability-и-ops)
 - [Использовать с осторожностью](#использовать-с-осторожностью)
+- [Метод Оценки](#метод-оценки)
 - [Критерии отбора](#критерии-отбора)
 - [Участие](#участие)
 
@@ -91,9 +106,6 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [stytchauth/mcp-stytch-consumer-todo-list](https://github.com/stytchauth/mcp-stytch-consumer-todo-list) | TODO app MCP server с примером auth. | Workers, MCP, Stytch | Medium | Active | Medium |
 | [dinasaur404/BestReads-MCP-Server](https://github.com/dinasaur404/BestReads-MCP-Server) | Remote MCP server на Workers. | Workers, MCP | Medium | Active | Medium |
 | [omarshahine/fastmail-mcp-remote](https://github.com/omarshahine/fastmail-mcp-remote) | Fastmail remote MCP с Cloudflare Access OAuth. | Workers, Access OAuth, MCP | Medium | Active | Medium |
-| [ofershap/mcp-server-cloudflare](https://github.com/ofershap/mcp-server-cloudflare) | MCP server для управления Workers, KV, R2, DNS и cache. | Workers, KV, R2, DNS APIs | Medium | Active | Medium |
-| [Jignesh-Ponamwar/skills-mcp](https://github.com/Jignesh-Ponamwar/skills-mcp) | Self-hostable searchable Agent Skills registry через MCP. | Workers, MCP, vector search | Medium | Active | Medium |
-| [Mihai-Codes/cf_ai_canvas](https://github.com/Mihai-Codes/cf_ai_canvas) | Collaborative canvas и remote MCP server. | Workers, Durable Objects, MCP, Workers AI | Medium | Active | Medium |
 
 ## Хранилище и память
 
@@ -102,9 +114,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [TimeSurgeLabs/athenadb](https://github.com/TimeSurgeLabs/athenadb) | Serverless API для векторной базы данных. | Workers, D1, Vectorize, Workers AI | Medium | Stable | Medium |
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | Поиск искусства с Vectorize и Workers AI. | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | Serverless embeddings API с Vectorize и OpenAI. | Workers, D1, Vectorize | Medium | Stable | Medium |
-| [zdmc23/cf-service-vector](https://github.com/zdmc23/cf-service-vector) | Vectorize API wrapper для Pages Functions service binding. | Workers, Pages Functions, Vectorize | Medium | Stable | Low |
 | [adam0white/MessageAI](https://github.com/adam0white/MessageAI) | Realtime messaging app с RAG и agents. | Workers, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
-| [vishal-codes/course-hero-rag-bot](https://github.com/vishal-codes/course-hero-rag-bot) | Компактный RAG API для chatbot по выбору курсов. | Workers, Vectorize | Medium | Active | Medium |
 
 ## Шаблоны и стартеры
 
@@ -113,7 +123,6 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [louisbrulenaudet/genai-api](https://github.com/louisbrulenaudet/genai-api) | Шаблон Workers + Gemini API. | Workers, AI Gateway, Hono | Easy | Active | Medium |
 | [nuxt-hub/core](https://github.com/nuxt-hub/core) | Nuxt module для database, KV, blob storage, cache и AI integrations. | D1, KV, R2, Workers AI | Medium | Active | Low |
 | [JSONbored/opennextjs-cli](https://github.com/JSONbored/opennextjs-cli) | CLI/TUI для OpenNext.js на Workers с MCP features. | Workers, OpenNext, MCP | Medium | Active | Low |
-| [jamescary/quickstart-template](https://github.com/jamescary/quickstart-template) | Cloudflare-native full-stack starter-шаблон. | D1, KV, Durable Objects | Easy | Active | Low |
 | [acoyfellow/svelte-edge](https://github.com/acoyfellow/svelte-edge) | Agent-generated Svelte UI, компилируемый на Workers. | Workers, Hono, Workers AI | Medium | Active | Medium |
 | [Geekgineer/needle-rs](https://github.com/Geekgineer/needle-rs) | Маленький WASM runtime для tool-calling transformer. | Workers, WASM | Hard | Active | Low |
 
@@ -123,8 +132,6 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 |---|---|---|---|---|---|
 | [PoemMisty/CF-Request-Analytics-Panel](https://github.com/PoemMisty/CF-Request-Analytics-Panel) | Request analytics panel для нескольких Cloudflare accounts. | Workers, analytics APIs | Medium | Active | Medium |
 | [bgdnvk/clanker](https://github.com/bgdnvk/clanker) | Autonomous systems engineering CLI agent для cloud environments. | Cloudflare support, Workers topics | Hard | Active | Medium |
-| [avansaber/seo-monster](https://github.com/avansaber/seo-monster) | Read-first MCP server для SEO workflows с Cloudflare data. | MCP, Cloudflare integrations | Medium | Active | Medium |
-| [sebastienrousseau/cloudcdn.pro](https://github.com/sebastienrousseau/cloudcdn.pro) | AI-native CDN с MCP controls и edge features. | Workers, Pages, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
 
 ## Использовать с осторожностью
 
@@ -133,9 +140,6 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | Проект | Что делает | Cloudflare stack | Deploy | Status | Risk |
 |---|---|---|---|---|---|
 | [Vauth/duckgpt](https://github.com/Vauth/duckgpt) | Chat app с доступом к моделям в стиле Workers AI. | Workers AI, Workers | Medium | Use with care | High |
-| [mohetios/Nekonymous](https://github.com/mohetios/Nekonymous) | Анонимный Telegram bot с encrypted relay. | Workers, D1, KV, Queues, Vectorize | Medium | Use with care | High |
-| [elizabethsiegle/remote-mcp-server-authless-chat-with-cal](https://github.com/elizabethsiegle/remote-mcp-server-authless-chat-with-cal) | MCP demo календаря без аутентификации. | Workers, Workers AI, MCP | Medium | Use with care | High |
-| [nikolanovoselec/m365-mcp-server-production](https://github.com/nikolanovoselec/m365-mcp-server-production) | Пример Microsoft 365 remote MCP server. | Workers, MCP, AI Gateway | Hard | Use with care | High |
 
 ## Критерии отбора
 

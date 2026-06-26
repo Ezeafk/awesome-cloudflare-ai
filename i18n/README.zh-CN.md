@@ -24,6 +24,20 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | 状态 | Active = 最近 6 个月有明显维护；Stable = 更新较少但仍有参考价值；Use with care = 存在安全、合规、隐私或滥用风险 |
 | 风险 | Low = 普通应用/模板；Medium = 涉及用户数据、API key、文件、账号或自动化；High = 代理、匿名、绕限制、爬虫等敏感用途 |
 
+## 评估方法
+
+项目收录前需要评分。Star 只是弱信号；新项目如果 Cloudflare 相关性强、可部署、文档清楚且风险可控，也可以收录。
+
+| 维度 | 分值 | 审核重点 |
+|---|---:|---|
+| Cloudflare 相关性 | 0-3 | 是否直接使用 Workers、Pages、Workers AI、AI Gateway、D1、KV、R2、Vectorize、Durable Objects、Queues、Email Routing、Turnstile 或 Cloudflare API。 |
+| 可部署性 | 0-2 | 是否有清晰部署路径、wrangler 配置、模板、demo 或 setup 说明。 |
+| 维护状态 | 0-2 | 是否有近期 commit、release、issue 回复或社区使用迹象。 |
+| 文档与许可 | 0-2 | README、环境变量、架构说明和 license 是否清楚可审计。 |
+| 安全性 | 0-1 | 对认证、用户数据、上传、自动化、代理、邮箱或高权限 API 是否有合理边界。 |
+
+收录参考：8-10 分推荐收录，6-7 分可带说明收录，4-5 分放入谨慎使用或复审，低于 4 分移除或暂不收录。高风险项目必须有更高分和明确安全说明。
+
 ## 目录
 
 - [官方与核心项目](#官方与核心项目)
@@ -34,6 +48,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 - [模板与脚手架](#模板与脚手架)
 - [可观测性与运维](#可观测性与运维)
 - [谨慎使用](#谨慎使用)
+- [评估方法](#评估方法)
 - [收录标准](#收录标准)
 - [贡献](#贡献)
 
@@ -91,9 +106,6 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [stytchauth/mcp-stytch-consumer-todo-list](https://github.com/stytchauth/mcp-stytch-consumer-todo-list) | 带认证示例的 TODO App MCP 服务器。 | Workers, MCP, Stytch | Medium | Active | Medium |
 | [dinasaur404/BestReads-MCP-Server](https://github.com/dinasaur404/BestReads-MCP-Server) | 基于 Workers 的远程 MCP 服务器。 | Workers, MCP | Medium | Active | Medium |
 | [omarshahine/fastmail-mcp-remote](https://github.com/omarshahine/fastmail-mcp-remote) | 使用 Cloudflare Access OAuth 的 Fastmail 远程 MCP 服务器。 | Workers, Access OAuth, MCP | Medium | Active | Medium |
-| [ofershap/mcp-server-cloudflare](https://github.com/ofershap/mcp-server-cloudflare) | 用于管理 Workers、KV、R2、DNS 和缓存的 MCP 服务器。 | Workers, KV, R2, DNS APIs | Medium | Active | Medium |
-| [Jignesh-Ponamwar/skills-mcp](https://github.com/Jignesh-Ponamwar/skills-mcp) | 通过 MCP 提供的可自托管语义搜索 Agent Skills 注册表。 | Workers, MCP, vector search | Medium | Active | Medium |
-| [Mihai-Codes/cf_ai_canvas](https://github.com/Mihai-Codes/cf_ai_canvas) | 协作画布与远程 MCP 服务器。 | Workers, Durable Objects, MCP, Workers AI | Medium | Active | Medium |
 
 ## 存储与记忆
 
@@ -102,9 +114,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [TimeSurgeLabs/athenadb](https://github.com/TimeSurgeLabs/athenadb) | Serverless 向量数据库 API。 | Workers, D1, Vectorize, Workers AI | Medium | Stable | Medium |
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | 使用 Vectorize 和 Workers AI 的艺术品搜索。 | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | 使用 Vectorize 和 OpenAI 的 Serverless Embeddings API。 | Workers, D1, Vectorize | Medium | Stable | Medium |
-| [zdmc23/cf-service-vector](https://github.com/zdmc23/cf-service-vector) | 面向 Pages Functions Service Binding 的 Vectorize API 包装器。 | Workers, Pages Functions, Vectorize | Medium | Stable | Low |
 | [adam0white/MessageAI](https://github.com/adam0white/MessageAI) | 带 RAG 和 Agent 的实时消息应用。 | Workers, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
-| [vishal-codes/course-hero-rag-bot](https://github.com/vishal-codes/course-hero-rag-bot) | 面向选课聊天机器人的紧凑 RAG API。 | Workers, Vectorize | Medium | Active | Medium |
 
 ## 模板与脚手架
 
@@ -113,7 +123,6 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [louisbrulenaudet/genai-api](https://github.com/louisbrulenaudet/genai-api) | Workers + Gemini API 模板。 | Workers, AI Gateway, Hono | Easy | Active | Medium |
 | [nuxt-hub/core](https://github.com/nuxt-hub/core) | 为 Nuxt 增加数据库、KV、对象存储、缓存和 AI 集成的模块。 | D1, KV, R2, Workers AI | Medium | Active | Low |
 | [JSONbored/opennextjs-cli](https://github.com/JSONbored/opennextjs-cli) | 面向 Workers 上 OpenNext.js 的 CLI/TUI，并带 MCP 能力。 | Workers, OpenNext, MCP | Medium | Active | Low |
-| [jamescary/quickstart-template](https://github.com/jamescary/quickstart-template) | Cloudflare 原生全栈 starter。 | D1, KV, Durable Objects | Easy | Active | Low |
 | [acoyfellow/svelte-edge](https://github.com/acoyfellow/svelte-edge) | 在 Workers 上编译 Agent 生成的 Svelte UI。 | Workers, Hono, Workers AI | Medium | Active | Medium |
 | [Geekgineer/needle-rs](https://github.com/Geekgineer/needle-rs) | 适用于浏览器、Workers 和 Node 的小型 WASM 工具调用 Transformer 运行时。 | Workers, WASM | Hard | Active | Low |
 
@@ -123,8 +132,6 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 |---|---|---|---|---|---|
 | [PoemMisty/CF-Request-Analytics-Panel](https://github.com/PoemMisty/CF-Request-Analytics-Panel) | Cloudflare 多账号请求分析面板。 | Workers, analytics APIs | Medium | Active | Medium |
 | [bgdnvk/clanker](https://github.com/bgdnvk/clanker) | 面向云环境的自治系统工程 CLI Agent。 | Cloudflare support, Workers topics | Hard | Active | Medium |
-| [avansaber/seo-monster](https://github.com/avansaber/seo-monster) | 包含 Cloudflare 数据的只读 SEO 工作流 MCP 服务器。 | MCP, Cloudflare integrations | Medium | Active | Medium |
-| [sebastienrousseau/cloudcdn.pro](https://github.com/sebastienrousseau/cloudcdn.pro) | 带 MCP 控制和边缘能力的 AI 原生 CDN。 | Workers, Pages, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
 
 ## 谨慎使用
 
@@ -133,9 +140,6 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | 项目 | 用途 | Cloudflare 技术栈 | 部署 | 状态 | 风险 |
 |---|---|---|---|---|---|
 | [Vauth/duckgpt](https://github.com/Vauth/duckgpt) | 使用 Workers AI 风格模型访问的聊天应用。 | Workers AI, Workers | Medium | Use with care | High |
-| [mohetios/Nekonymous](https://github.com/mohetios/Nekonymous) | 带加密中继的匿名 Telegram Bot。 | Workers, D1, KV, Queues, Vectorize | Medium | Use with care | High |
-| [elizabethsiegle/remote-mcp-server-authless-chat-with-cal](https://github.com/elizabethsiegle/remote-mcp-server-authless-chat-with-cal) | 无认证日历 MCP 演示。 | Workers, Workers AI, MCP | Medium | Use with care | High |
-| [nikolanovoselec/m365-mcp-server-production](https://github.com/nikolanovoselec/m365-mcp-server-production) | Microsoft 365 远程 MCP 服务器示例。 | Workers, MCP, AI Gateway | Hard | Use with care | High |
 
 ## 收录标准
 

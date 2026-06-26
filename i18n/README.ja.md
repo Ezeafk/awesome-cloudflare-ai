@@ -24,6 +24,20 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | Status | Active = 直近 6 か月に明確なメンテナンスあり；Stable = 更新は少ないが有用；Use with care = セキュリティ、コンプライアンス、プライバシー、悪用リスクあり |
 | Risk | Low = 一般的なアプリ/テンプレート；Medium = ユーザーデータ、API key、ファイル、アカウント、自動化を扱う；High = proxy、匿名性、制限回避、クローリングなど |
 
+## 評価方法
+
+掲載前にプロジェクトをスコアリングします。Stars は弱いシグナルにすぎません。新しいプロジェクトでも、Cloudflare との関連性、デプロイ可能性、ドキュメント、安全性が十分なら掲載できます。
+
+| 領域 | 点数 | 確認内容 |
+|---|---:|---|
+| Cloudflare 関連性 | 0-3 | Workers、Pages、Workers AI、AI Gateway、D1、KV、R2、Vectorize、Durable Objects、Queues、Email Routing、Turnstile、Cloudflare APIs の直接利用。 |
+| デプロイ可能性 | 0-2 | 明確な deploy path、wrangler config、template、demo、setup instructions。 |
+| メンテナンス | 0-2 | 最近の commits、releases、issue replies、または community use。 |
+| ドキュメントとライセンス | 0-2 | 明確な README、environment variables、architecture notes、監査可能な license。 |
+| 安全性 | 0-1 | auth、user data、uploads、automation、proxies、email、privileged APIs に対する妥当な境界。 |
+
+掲載目安: 8-10 = 推奨、6-7 = 注意付きで可、4-5 = Use with care または再審査、4 未満 = 削除または掲載しない。高リスクプロジェクトにはより高いスコアと明確な安全メモが必要です。
+
 ## 目次
 
 - [公式・コア](#公式コア)
@@ -34,6 +48,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 - [テンプレートとスターター](#テンプレートとスターター)
 - [可観測性と運用](#可観測性と運用)
 - [注意して使うもの](#注意して使うもの)
+- [評価方法](#評価方法)
 - [選定基準](#選定基準)
 - [コントリビューション](#コントリビューション)
 
@@ -91,9 +106,6 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [stytchauth/mcp-stytch-consumer-todo-list](https://github.com/stytchauth/mcp-stytch-consumer-todo-list) | 認証例付き TODO アプリ MCP サーバー。 | Workers, MCP, Stytch | Medium | Active | Medium |
 | [dinasaur404/BestReads-MCP-Server](https://github.com/dinasaur404/BestReads-MCP-Server) | Workers で構築されたリモート MCP サーバー。 | Workers, MCP | Medium | Active | Medium |
 | [omarshahine/fastmail-mcp-remote](https://github.com/omarshahine/fastmail-mcp-remote) | Cloudflare Access OAuth を使う Fastmail リモート MCP。 | Workers, Access OAuth, MCP | Medium | Active | Medium |
-| [ofershap/mcp-server-cloudflare](https://github.com/ofershap/mcp-server-cloudflare) | Workers、KV、R2、DNS、cache を管理する MCP サーバー。 | Workers, KV, R2, DNS APIs | Medium | Active | Medium |
-| [Jignesh-Ponamwar/skills-mcp](https://github.com/Jignesh-Ponamwar/skills-mcp) | MCP 経由の self-hosted 検索可能 Agent Skills レジストリ。 | Workers, MCP, vector search | Medium | Active | Medium |
-| [Mihai-Codes/cf_ai_canvas](https://github.com/Mihai-Codes/cf_ai_canvas) | 共同編集キャンバスとリモート MCP サーバー。 | Workers, Durable Objects, MCP, Workers AI | Medium | Active | Medium |
 
 ## ストレージとメモリ
 
@@ -102,9 +114,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [TimeSurgeLabs/athenadb](https://github.com/TimeSurgeLabs/athenadb) | Serverless なベクトルデータベース API。 | Workers, D1, Vectorize, Workers AI | Medium | Stable | Medium |
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | Vectorize と Workers AI を使うアート検索。 | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | Vectorize と OpenAI を使う Serverless embeddings API。 | Workers, D1, Vectorize | Medium | Stable | Medium |
-| [zdmc23/cf-service-vector](https://github.com/zdmc23/cf-service-vector) | Pages Functions の service binding 用 Vectorize API ラッパー。 | Workers, Pages Functions, Vectorize | Medium | Stable | Low |
 | [adam0white/MessageAI](https://github.com/adam0white/MessageAI) | RAG と Agent を備えたリアルタイムメッセージアプリ。 | Workers, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
-| [vishal-codes/course-hero-rag-bot](https://github.com/vishal-codes/course-hero-rag-bot) | 履修選択 chatbot 向けの小型 RAG API。 | Workers, Vectorize | Medium | Active | Medium |
 
 ## テンプレートとスターター
 
@@ -113,7 +123,6 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [louisbrulenaudet/genai-api](https://github.com/louisbrulenaudet/genai-api) | Workers + Gemini API テンプレート。 | Workers, AI Gateway, Hono | Easy | Active | Medium |
 | [nuxt-hub/core](https://github.com/nuxt-hub/core) | Nuxt に DB、KV、blob storage、cache、AI 連携を追加。 | D1, KV, R2, Workers AI | Medium | Active | Low |
 | [JSONbored/opennextjs-cli](https://github.com/JSONbored/opennextjs-cli) | Workers 上の OpenNext.js 向け CLI/TUI と MCP 機能。 | Workers, OpenNext, MCP | Medium | Active | Low |
-| [jamescary/quickstart-template](https://github.com/jamescary/quickstart-template) | Cloudflare ネイティブな full-stack starter。 | D1, KV, Durable Objects | Easy | Active | Low |
 | [acoyfellow/svelte-edge](https://github.com/acoyfellow/svelte-edge) | Agent 生成 Svelte UI を Workers でコンパイル。 | Workers, Hono, Workers AI | Medium | Active | Medium |
 | [Geekgineer/needle-rs](https://github.com/Geekgineer/needle-rs) | tool-calling transformer 用の小型 WASM ランタイム。 | Workers, WASM | Hard | Active | Low |
 
@@ -123,8 +132,6 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 |---|---|---|---|---|---|
 | [PoemMisty/CF-Request-Analytics-Panel](https://github.com/PoemMisty/CF-Request-Analytics-Panel) | 複数 Cloudflare アカウントのリクエスト分析パネル。 | Workers, analytics APIs | Medium | Active | Medium |
 | [bgdnvk/clanker](https://github.com/bgdnvk/clanker) | クラウド環境向け自律システムエンジニアリング CLI Agent。 | Cloudflare support, Workers topics | Hard | Active | Medium |
-| [avansaber/seo-monster](https://github.com/avansaber/seo-monster) | Cloudflare データも扱う read-first SEO ワークフロー MCP。 | MCP, Cloudflare integrations | Medium | Active | Medium |
-| [sebastienrousseau/cloudcdn.pro](https://github.com/sebastienrousseau/cloudcdn.pro) | MCP 制御と edge 機能を備えた AI-native CDN。 | Workers, Pages, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
 
 ## 注意して使うもの
 
@@ -133,9 +140,6 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | プロジェクト | 内容 | Cloudflare スタック | Deploy | Status | Risk |
 |---|---|---|---|---|---|
 | [Vauth/duckgpt](https://github.com/Vauth/duckgpt) | Workers AI 風のモデルアクセスを使うチャットアプリ。 | Workers AI, Workers | Medium | Use with care | High |
-| [mohetios/Nekonymous](https://github.com/mohetios/Nekonymous) | 暗号化 relay を備えた匿名 Telegram bot。 | Workers, D1, KV, Queues, Vectorize | Medium | Use with care | High |
-| [elizabethsiegle/remote-mcp-server-authless-chat-with-cal](https://github.com/elizabethsiegle/remote-mcp-server-authless-chat-with-cal) | 認証なしカレンダー MCP デモ。 | Workers, Workers AI, MCP | Medium | Use with care | High |
-| [nikolanovoselec/m365-mcp-server-production](https://github.com/nikolanovoselec/m365-mcp-server-production) | Microsoft 365 リモート MCP サーバー例。 | Workers, MCP, AI Gateway | Hard | Use with care | High |
 
 ## 選定基準
 
