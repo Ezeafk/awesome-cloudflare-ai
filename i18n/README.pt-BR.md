@@ -6,7 +6,7 @@ Idiomas: [English](../README.md) | [简体中文](README.zh-CN.md) | [Português
 
 Um diretório rigorosamente selecionado de projetos open source de Cloudflare AI / Agent / MCP. Esta não é uma lista genérica de ferramentas de IA; ela inclui apenas projetos com relação clara com implantação, runtime ou infraestrutura de dados da Cloudflare.
 
-Última revisão: 2026-06-26
+Última revisão: 2026-06-30
 
 ## Por que esta lista
 
@@ -79,6 +79,7 @@ Guia de inclusão: 8-10 = recomendado, 6-7 = aceitável com ressalvas, 4-5 = use
 | [bestian/askit-hono](https://github.com/bestian/askit-hono) | Respostas RAG citadas a partir do arquivo de transcrições de Audrey Tang. | Workers, Hono, Vectorize, Workers AI | Medium | Active | Medium |
 | [Teycir/ArxivExplorer](https://github.com/Teycir/ArxivExplorer) | Busca semântica com IA para artigos do arXiv. | Workers, semantic search | Medium | Active | Medium |
 | [IchimaruGin728/Gins-Blog](https://github.com/IchimaruGin728/Gins-Blog) | Blog na edge com busca por IA e OAuth. | Workers, D1, R2, KV, Hono | Medium | Active | Medium |
+| [arusso-aboutcloud/aboutcloud-search](https://github.com/arusso-aboutcloud/aboutcloud-search) | Chatbot RAG auditável com guardrails de segurança explícitos. | Workers AI, Vectorize, D1, Workers | Medium | Active | Medium |
 
 ## Agents em Workers
 
@@ -94,6 +95,8 @@ Guia de inclusão: 8-10 = recomendado, 6-7 = aceitável com ressalvas, 4-5 = use
 | [Ahmad-A0/iris-voice-agent](https://github.com/Ahmad-A0/iris-voice-agent) | Agente de voz em tempo real na edge. | Workers, Durable Objects | Hard | Active | Medium |
 | [sinameraji/kimiflare](https://github.com/sinameraji/kimiflare) | Agente de programação no terminal rodando na Cloudflare. | Workers AI, AI Gateway | Medium | Active | Medium |
 | [marceloeatworld/clopinette-ai](https://github.com/marceloeatworld/clopinette-ai) | Agente multimodal com memória e integrações de bots. | Workers, Durable Objects, Workers AI, AutoRAG | Hard | Active | Medium |
+| [acoyfellow/my-ax](https://github.com/acoyfellow/my-ax) | Ambiente pessoal de AI agent auto-hospedado na Cloudflare. | Workers, Durable Objects, D1, MCP | Hard | Active | Medium |
+| [yukthapriya/web-research-agent](https://github.com/yukthapriya/web-research-agent) | Agente de pesquisa web que planeja, busca e escreve relatórios com citações. | Workers AI, Workflows, Durable Objects | Medium | Active | Medium |
 
 ## MCP na Cloudflare
 
@@ -106,6 +109,7 @@ Guia de inclusão: 8-10 = recomendado, 6-7 = aceitável com ressalvas, 4-5 = use
 | [stytchauth/mcp-stytch-consumer-todo-list](https://github.com/stytchauth/mcp-stytch-consumer-todo-list) | Servidor MCP de TODO app com exemplo de autenticação. | Workers, MCP, Stytch | Medium | Active | Medium |
 | [dinasaur404/BestReads-MCP-Server](https://github.com/dinasaur404/BestReads-MCP-Server) | Servidor MCP remoto construído com Workers. | Workers, MCP | Medium | Active | Medium |
 | [omarshahine/fastmail-mcp-remote](https://github.com/omarshahine/fastmail-mcp-remote) | MCP remoto para Fastmail com Cloudflare Access OAuth. | Workers, Access OAuth, MCP | Medium | Active | Medium |
+| [miantiao-me/github-stars](https://github.com/miantiao-me/github-stars) | Busca em linguagem natural nos repositórios favoritados do GitHub via MCP. | Workers, MCP, R2, AutoRAG | Medium | Active | Medium |
 
 ## Armazenamento e memória
 
@@ -115,6 +119,7 @@ Guia de inclusão: 8-10 = recomendado, 6-7 = aceitável com ressalvas, 4-5 = use
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | Busca de arte usando Vectorize e Workers AI. | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | API serverless de embeddings com Vectorize e OpenAI. | Workers, D1, Vectorize | Medium | Stable | Medium |
 | [adam0white/MessageAI](https://github.com/adam0white/MessageAI) | App de mensagens em tempo real com RAG e agentes. | Workers, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
+| [realchendahuang/FlareMo](https://github.com/realchendahuang/FlareMo) | Sistema pessoal de conhecimento nativo da Cloudflare com Memos API e subconjunto MCP. | Workers, D1, R2, Access, MCP | Easy | Active | Medium |
 
 ## Templates e starters
 

@@ -6,7 +6,7 @@
 
 Cloudflare AI / Agent / MCP に関する厳選オープンソースディレクトリです。汎用 AI ツール一覧ではなく、Cloudflare でのデプロイ、ランタイム、データ基盤と明確な関係があるプロジェクトだけを掲載します。
 
-最終確認日: 2026-06-26
+最終確認日: 2026-06-30
 
 ## このリストについて
 
@@ -79,6 +79,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [bestian/askit-hono](https://github.com/bestian/askit-hono) | Audrey Tang の文字起こしアーカイブを使う引用付き RAG QA。 | Workers, Hono, Vectorize, Workers AI | Medium | Active | Medium |
 | [Teycir/ArxivExplorer](https://github.com/Teycir/ArxivExplorer) | arXiv 論文向け AI セマンティック検索。 | Workers, semantic search | Medium | Active | Medium |
 | [IchimaruGin728/Gins-Blog](https://github.com/IchimaruGin728/Gins-Blog) | AI 検索と OAuth を備えた Edge ブログ。 | Workers, D1, R2, KV, Hono | Medium | Active | Medium |
+| [arusso-aboutcloud/aboutcloud-search](https://github.com/arusso-aboutcloud/aboutcloud-search) | 明示的な安全ガードレールを備えた監査可能な RAG チャットボット。 | Workers AI, Vectorize, D1, Workers | Medium | Active | Medium |
 
 ## Workers 上の Agent
 
@@ -94,6 +95,8 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [Ahmad-A0/iris-voice-agent](https://github.com/Ahmad-A0/iris-voice-agent) | Edge 上のリアルタイム音声 Agent。 | Workers, Durable Objects | Hard | Active | Medium |
 | [sinameraji/kimiflare](https://github.com/sinameraji/kimiflare) | Cloudflare アカウント上で動くターミナル型コーディング Agent。 | Workers AI, AI Gateway | Medium | Active | Medium |
 | [marceloeatworld/clopinette-ai](https://github.com/marceloeatworld/clopinette-ai) | メモリと bot 連携を持つマルチモーダル AI Agent。 | Workers, Durable Objects, Workers AI, AutoRAG | Hard | Active | Medium |
+| [acoyfellow/my-ax](https://github.com/acoyfellow/my-ax) | Cloudflare にセルフホストする個人向け AI agent 運用環境。 | Workers, Durable Objects, D1, MCP | Hard | Active | Medium |
+| [yukthapriya/web-research-agent](https://github.com/yukthapriya/web-research-agent) | 計画、検索、引用付きレポート作成を行う Web research agent。 | Workers AI, Workflows, Durable Objects | Medium | Active | Medium |
 
 ## Cloudflare 上の MCP
 
@@ -106,6 +109,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [stytchauth/mcp-stytch-consumer-todo-list](https://github.com/stytchauth/mcp-stytch-consumer-todo-list) | 認証例付き TODO アプリ MCP サーバー。 | Workers, MCP, Stytch | Medium | Active | Medium |
 | [dinasaur404/BestReads-MCP-Server](https://github.com/dinasaur404/BestReads-MCP-Server) | Workers で構築されたリモート MCP サーバー。 | Workers, MCP | Medium | Active | Medium |
 | [omarshahine/fastmail-mcp-remote](https://github.com/omarshahine/fastmail-mcp-remote) | Cloudflare Access OAuth を使う Fastmail リモート MCP。 | Workers, Access OAuth, MCP | Medium | Active | Medium |
+| [miantiao-me/github-stars](https://github.com/miantiao-me/github-stars) | MCP 経由で GitHub starred repositories を自然言語検索。 | Workers, MCP, R2, AutoRAG | Medium | Active | Medium |
 
 ## ストレージとメモリ
 
@@ -115,6 +119,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | Vectorize と Workers AI を使うアート検索。 | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | Vectorize と OpenAI を使う Serverless embeddings API。 | Workers, D1, Vectorize | Medium | Stable | Medium |
 | [adam0white/MessageAI](https://github.com/adam0white/MessageAI) | RAG と Agent を備えたリアルタイムメッセージアプリ。 | Workers, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
+| [realchendahuang/FlareMo](https://github.com/realchendahuang/FlareMo) | Memos API と MCP subset を備えた Cloudflare-native 個人知識システム。 | Workers, D1, R2, Access, MCP | Easy | Active | Medium |
 
 ## テンプレートとスターター
 

@@ -6,7 +6,7 @@
 
 Строго отобранный каталог open-source проектов Cloudflare AI / Agent / MCP. Это не общий список AI-инструментов: сюда входят только проекты с явной связью с деплоем, runtime или data-инфраструктурой Cloudflare.
 
-Последняя проверка: 2026-06-26
+Последняя проверка: 2026-06-30
 
 ## Зачем нужен этот список
 
@@ -79,6 +79,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [bestian/askit-hono](https://github.com/bestian/askit-hono) | RAG-ответы с цитатами из архива расшифровок Audrey Tang. | Workers, Hono, Vectorize, Workers AI | Medium | Active | Medium |
 | [Teycir/ArxivExplorer](https://github.com/Teycir/ArxivExplorer) | AI-enhanced semantic search для arXiv papers. | Workers, semantic search | Medium | Active | Medium |
 | [IchimaruGin728/Gins-Blog](https://github.com/IchimaruGin728/Gins-Blog) | Edge blog с AI search и OAuth. | Workers, D1, R2, KV, Hono | Medium | Active | Medium |
+| [arusso-aboutcloud/aboutcloud-search](https://github.com/arusso-aboutcloud/aboutcloud-search) | Аудируемый RAG-чатбот с явными safety guardrails. | Workers AI, Vectorize, D1, Workers | Medium | Active | Medium |
 
 ## Agents на Workers
 
@@ -94,6 +95,8 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [Ahmad-A0/iris-voice-agent](https://github.com/Ahmad-A0/iris-voice-agent) | Realtime voice agent на edge. | Workers, Durable Objects | Hard | Active | Medium |
 | [sinameraji/kimiflare](https://github.com/sinameraji/kimiflare) | Terminal coding agent, работающий в аккаунте Cloudflare. | Workers AI, AI Gateway | Medium | Active | Medium |
 | [marceloeatworld/clopinette-ai](https://github.com/marceloeatworld/clopinette-ai) | Мультимодальный AI agent с memory и bot integrations. | Workers, Durable Objects, Workers AI, AutoRAG | Hard | Active | Medium |
+| [acoyfellow/my-ax](https://github.com/acoyfellow/my-ax) | Персональная среда AI agent, self-hosted в аккаунте Cloudflare. | Workers, Durable Objects, D1, MCP | Hard | Active | Medium |
+| [yukthapriya/web-research-agent](https://github.com/yukthapriya/web-research-agent) | Web research agent, который планирует, ищет и пишет отчеты с цитатами. | Workers AI, Workflows, Durable Objects | Medium | Active | Medium |
 
 ## MCP на Cloudflare
 
@@ -106,6 +109,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [stytchauth/mcp-stytch-consumer-todo-list](https://github.com/stytchauth/mcp-stytch-consumer-todo-list) | TODO app MCP server с примером auth. | Workers, MCP, Stytch | Medium | Active | Medium |
 | [dinasaur404/BestReads-MCP-Server](https://github.com/dinasaur404/BestReads-MCP-Server) | Remote MCP server на Workers. | Workers, MCP | Medium | Active | Medium |
 | [omarshahine/fastmail-mcp-remote](https://github.com/omarshahine/fastmail-mcp-remote) | Fastmail remote MCP с Cloudflare Access OAuth. | Workers, Access OAuth, MCP | Medium | Active | Medium |
+| [miantiao-me/github-stars](https://github.com/miantiao-me/github-stars) | Поиск на естественном языке по GitHub starred repositories через MCP. | Workers, MCP, R2, AutoRAG | Medium | Active | Medium |
 
 ## Хранилище и память
 
@@ -115,6 +119,7 @@ Cloudflare Workers, Pages, D1, KV, R2, Vectorize, Durable Objects, Workers AI, A
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | Поиск искусства с Vectorize и Workers AI. | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | Serverless embeddings API с Vectorize и OpenAI. | Workers, D1, Vectorize | Medium | Stable | Medium |
 | [adam0white/MessageAI](https://github.com/adam0white/MessageAI) | Realtime messaging app с RAG и agents. | Workers, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
+| [realchendahuang/FlareMo](https://github.com/realchendahuang/FlareMo) | Cloudflare-native персональная система знаний с Memos API и MCP subset. | Workers, D1, R2, Access, MCP | Easy | Active | Medium |
 
 ## Шаблоны и стартеры
 

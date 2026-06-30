@@ -6,7 +6,7 @@
 
 一个严格筛选的 Cloudflare AI / Agent / MCP 开源项目导航。这里不是泛 AI 工具大全，只收录与 Cloudflare 部署、运行时或数据基础设施有明确关系的项目。
 
-最后审核：2026-06-26
+最后审核：2026-06-30
 
 ## 为什么做这个列表
 
@@ -79,6 +79,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [bestian/askit-hono](https://github.com/bestian/askit-hono) | 基于唐凤逐字稿档案的带引用 RAG 问答。 | Workers, Hono, Vectorize, Workers AI | Medium | Active | Medium |
 | [Teycir/ArxivExplorer](https://github.com/Teycir/ArxivExplorer) | 面向 arXiv 论文的 AI 语义搜索。 | Workers, semantic search | Medium | Active | Medium |
 | [IchimaruGin728/Gins-Blog](https://github.com/IchimaruGin728/Gins-Blog) | 带 AI 搜索和 OAuth 的边缘博客。 | Workers, D1, R2, KV, Hono | Medium | Active | Medium |
+| [arusso-aboutcloud/aboutcloud-search](https://github.com/arusso-aboutcloud/aboutcloud-search) | 带明确安全护栏、可审计的 RAG 聊天机器人。 | Workers AI, Vectorize, D1, Workers | Medium | Active | Medium |
 
 ## Workers 上的 Agent
 
@@ -94,6 +95,8 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [Ahmad-A0/iris-voice-agent](https://github.com/Ahmad-A0/iris-voice-agent) | 边缘实时语音 Agent。 | Workers, Durable Objects | Hard | Active | Medium |
 | [sinameraji/kimiflare](https://github.com/sinameraji/kimiflare) | 运行在 Cloudflare 上的终端编码 Agent。 | Workers AI, AI Gateway | Medium | Active | Medium |
 | [marceloeatworld/clopinette-ai](https://github.com/marceloeatworld/clopinette-ai) | 带记忆和机器人集成的多模态 AI Agent。 | Workers, Durable Objects, Workers AI, AutoRAG | Hard | Active | Medium |
+| [acoyfellow/my-ax](https://github.com/acoyfellow/my-ax) | 可自托管在 Cloudflare 上的个人 AI Agent 操作环境。 | Workers, Durable Objects, D1, MCP | Hard | Active | Medium |
+| [yukthapriya/web-research-agent](https://github.com/yukthapriya/web-research-agent) | 会规划、搜索并生成带引用报告的 Web research agent。 | Workers AI, Workflows, Durable Objects | Medium | Active | Medium |
 
 ## Cloudflare 上的 MCP
 
@@ -106,6 +109,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [stytchauth/mcp-stytch-consumer-todo-list](https://github.com/stytchauth/mcp-stytch-consumer-todo-list) | 带认证示例的 TODO App MCP 服务器。 | Workers, MCP, Stytch | Medium | Active | Medium |
 | [dinasaur404/BestReads-MCP-Server](https://github.com/dinasaur404/BestReads-MCP-Server) | 基于 Workers 的远程 MCP 服务器。 | Workers, MCP | Medium | Active | Medium |
 | [omarshahine/fastmail-mcp-remote](https://github.com/omarshahine/fastmail-mcp-remote) | 使用 Cloudflare Access OAuth 的 Fastmail 远程 MCP 服务器。 | Workers, Access OAuth, MCP | Medium | Active | Medium |
+| [miantiao-me/github-stars](https://github.com/miantiao-me/github-stars) | 通过 MCP 对 GitHub starred repositories 进行自然语言搜索。 | Workers, MCP, R2, AutoRAG | Medium | Active | Medium |
 
 ## 存储与记忆
 
@@ -115,6 +119,7 @@ Cloudflare Workers、Pages、D1、KV、R2、Vectorize、Durable Objects、Worker
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | 使用 Vectorize 和 Workers AI 的艺术品搜索。 | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | 使用 Vectorize 和 OpenAI 的 Serverless Embeddings API。 | Workers, D1, Vectorize | Medium | Stable | Medium |
 | [adam0white/MessageAI](https://github.com/adam0white/MessageAI) | 带 RAG 和 Agent 的实时消息应用。 | Workers, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
+| [realchendahuang/FlareMo](https://github.com/realchendahuang/FlareMo) | Cloudflare 原生个人知识系统，支持 Memos API 和 MCP 子集。 | Workers, D1, R2, Access, MCP | Easy | Active | Medium |
 
 ## 模板与脚手架
 

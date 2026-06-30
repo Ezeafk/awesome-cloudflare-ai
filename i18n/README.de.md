@@ -6,7 +6,7 @@ Sprachen: [English](../README.md) | [简体中文](README.zh-CN.md) | [Portuguê
 
 Ein streng kuratiertes Verzeichnis für Cloudflare AI / Agent / MCP Open-Source-Projekte. Dies ist keine allgemeine KI-Toolliste, sondern enthält nur Projekte mit klarem Bezug zu Cloudflare-Deployment, Runtime oder Dateninfrastruktur.
 
-Zuletzt geprüft: 2026-06-26
+Zuletzt geprüft: 2026-06-30
 
 ## Warum diese Liste
 
@@ -79,6 +79,7 @@ Aufnahmeleitlinie: 8-10 = empfohlen, 6-7 = akzeptabel mit Hinweisen, 4-5 = use w
 | [bestian/askit-hono](https://github.com/bestian/askit-hono) | Zitierte RAG-Antworten aus dem Audrey-Tang-Transkriptarchiv. | Workers, Hono, Vectorize, Workers AI | Medium | Active | Medium |
 | [Teycir/ArxivExplorer](https://github.com/Teycir/ArxivExplorer) | KI-gestützte semantische Suche für arXiv-Paper. | Workers, semantic search | Medium | Active | Medium |
 | [IchimaruGin728/Gins-Blog](https://github.com/IchimaruGin728/Gins-Blog) | Edge-Blog mit KI-Suche und OAuth. | Workers, D1, R2, KV, Hono | Medium | Active | Medium |
+| [arusso-aboutcloud/aboutcloud-search](https://github.com/arusso-aboutcloud/aboutcloud-search) | Auditierbarer RAG-Chatbot mit expliziten Sicherheits-Guardrails. | Workers AI, Vectorize, D1, Workers | Medium | Active | Medium |
 
 ## Agents auf Workers
 
@@ -94,6 +95,8 @@ Aufnahmeleitlinie: 8-10 = empfohlen, 6-7 = akzeptabel mit Hinweisen, 4-5 = use w
 | [Ahmad-A0/iris-voice-agent](https://github.com/Ahmad-A0/iris-voice-agent) | Realtime-Voice-Agent an der Edge. | Workers, Durable Objects | Hard | Active | Medium |
 | [sinameraji/kimiflare](https://github.com/sinameraji/kimiflare) | Terminal-Coding-Agent auf dem eigenen Cloudflare-Account. | Workers AI, AI Gateway | Medium | Active | Medium |
 | [marceloeatworld/clopinette-ai](https://github.com/marceloeatworld/clopinette-ai) | Multimodaler Agent mit Memory und Bot-Integrationen. | Workers, Durable Objects, Workers AI, AutoRAG | Hard | Active | Medium |
+| [acoyfellow/my-ax](https://github.com/acoyfellow/my-ax) | Persönliche AI-Agent-Betriebsumgebung zum Self-Hosting auf Cloudflare. | Workers, Durable Objects, D1, MCP | Hard | Active | Medium |
+| [yukthapriya/web-research-agent](https://github.com/yukthapriya/web-research-agent) | Web-Research-Agent, der plant, sucht und zitierte Berichte schreibt. | Workers AI, Workflows, Durable Objects | Medium | Active | Medium |
 
 ## MCP auf Cloudflare
 
@@ -106,6 +109,7 @@ Aufnahmeleitlinie: 8-10 = empfohlen, 6-7 = akzeptabel mit Hinweisen, 4-5 = use w
 | [stytchauth/mcp-stytch-consumer-todo-list](https://github.com/stytchauth/mcp-stytch-consumer-todo-list) | TODO-App-MCP-Server mit Auth-Beispiel. | Workers, MCP, Stytch | Medium | Active | Medium |
 | [dinasaur404/BestReads-MCP-Server](https://github.com/dinasaur404/BestReads-MCP-Server) | Remote-MCP-Server auf Workers. | Workers, MCP | Medium | Active | Medium |
 | [omarshahine/fastmail-mcp-remote](https://github.com/omarshahine/fastmail-mcp-remote) | Fastmail-Remote-MCP mit Cloudflare Access OAuth. | Workers, Access OAuth, MCP | Medium | Active | Medium |
+| [miantiao-me/github-stars](https://github.com/miantiao-me/github-stars) | Natürlichsprachliche Suche über GitHub-Starred-Repositories per MCP. | Workers, MCP, R2, AutoRAG | Medium | Active | Medium |
 
 ## Storage und Memory
 
@@ -115,6 +119,7 @@ Aufnahmeleitlinie: 8-10 = empfohlen, 6-7 = akzeptabel mit Hinweisen, 4-5 = use w
 | [elizabethsiegle/art-vector-search-cloudflare](https://github.com/elizabethsiegle/art-vector-search-cloudflare) | Kunstsuche mit Vectorize und Workers AI. | Vectorize, Workers AI, AI Gateway | Medium | Stable | Medium |
 | [synapse-ai-labs/synapse-api](https://github.com/synapse-ai-labs/synapse-api) | Serverless Embeddings API mit Vectorize und OpenAI. | Workers, D1, Vectorize | Medium | Stable | Medium |
 | [adam0white/MessageAI](https://github.com/adam0white/MessageAI) | Realtime-Messaging-App mit RAG und Agents. | Workers, Durable Objects, Vectorize, Workers AI | Hard | Active | Medium |
+| [realchendahuang/FlareMo](https://github.com/realchendahuang/FlareMo) | Cloudflare-natives persönliches Wissenssystem mit Memos API und MCP-Subset. | Workers, D1, R2, Access, MCP | Easy | Active | Medium |
 
 ## Templates und Starter
 
